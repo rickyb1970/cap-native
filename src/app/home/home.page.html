@@ -1,20 +1,14 @@
-<ion-header [translucent]="true">
+<!-- src/app/home/home.component.html -->
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content>
+  <ion-button (click)="openBrowser()">Open Browser</ion-button>
+  <ion-button (click)="takePhoto()">Take Photo</ion-button>
+  <ion-button (click)="selectPhoto()">Select Photo</ion-button>
 </ion-content>
